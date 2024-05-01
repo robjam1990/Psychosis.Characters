@@ -29,7 +29,15 @@ The `Character` class is the base class for all characters in the game. It conta
 - `speed`: The character's speed.
 - `skills`: A list of skills that the character knows.
 - `status`: A list of status effects that are affecting the character.
-
+- `is_dead`: A boolean indicating whether the character is dead or not.
+- `is_fleeing`: A boolean indicating whether the character is fleeing or not.
+- `is_defending`: A boolean indicating whether the character is defending or not.
+- `is_stunned`: A boolean indicating whether the character is stunned or not.
+- `is_confused`: A boolean indicating whether the character is confused or not.
+- `is_charmed`: A boolean indicating whether the character is charmed or not.
+- `is_berserk`: A boolean indicating whether the character is berserk or not.
+- `is_silenced`: A boolean indicating whether the character is silenced or not.
+- `is_poisoned`: A boolean indicating whether the character is poisoned or not.
 
 ## Usage
 
@@ -49,5 +57,5 @@ character = Character(
 
 		You can also modify the character's properties like this:
 		```python
-		character.class_name = 'Warrior'
+		character.class_name = 'Adventurer'
 		```
