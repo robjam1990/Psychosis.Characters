@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychosis - Character Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        select {
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        #characterConfirmation {
+            text-align: center;
+        }
+
+        #confirmationMessage {
+            margin-bottom: 20px;
+        }
+
+        #characterCreationOptions {
+            display: none;
+        }
+
+        #characterConfirmation {
+            display: none;
+        }
+
+        #charactername {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Psychosis - Character Creation</h1>
+    </header>
+
+    <section id="characterCreation">
+        <h2>Welcome to the World of Thear!</h2>
+        <p>Begin your journey by crafting your unique character.</p>
+        <button id="startJourney">Start Your Journey</button>
+    </section>
+
+    <section id="characterCreationOptions" style="display:none;">
+        <label for="charactername">Character Name:</label>
+        <input type="text" id="charactername" placeholder="Enter your character's name" maxlength="21" onsubmit="Animation" src="Characters.cs">
+
+        <label for="characterClass">Character Class</label>
+        <select id="characterClass">
+            <option value="student">Student</option>
+            <option value="thief">Thief</option>
+            <option value="adventurer">Adventurer</option>
+        </select>
+
+        <label for="characterNation">Character Nation</label>
+        <select id="characterNation">
+            <option value="bractalia">Bractalia</option>
+            <option value="wolk">Wolk</option>
+            <option value="kinderyarn">Kinderyarn</option>
+            <option value="thipse">Thipse</option>
+            <option value="nymenada">Nymenada</option>
+            <option value="lochtou">Lochtou</option>
+            <option value="varthek">Varthek</option>
+            <option value="jight">Jight</option>
+            <option value="slake">Slake</option>
+        </select>
+
+        <button id="createCharacter" onclick="characterConfirmation" onsubmit="name" name="charactername">Create Character</button>
+    </section>
+
+    <section id="characterConfirmation" style="display:none;">
+        <h2>Character Information</h2>
+        <p id="confirmationMessage">Confirmation</p>
+        <button id="confirmCharacter">Confirm</button>
+        <button id="editCharacter">Edit</button>
+        <button id="cancelCharacter">Cancel</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Psychosis - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('startJourney').addEventListener('click', function () {
+            document.getElementById('characterCreation').style.display = 'none';
+            document.getElementById('characterCreationOptions').style.display = 'block';
+        });
+
+        document.getElementById('createCharacter').addEventListener('click', function () {
+            var characterName = document.getElementById('charactername').value;
+            var characterClass = document.getElementById('characterClass').value;
+            var characterNation = document.getElementById('characterNation').value;
+
+            document.getElementById('characterCreationOptions').style.display = 'none';
+            document.getElementById('characterConfirmation').style.display = 'block';
+
+            document.getElementById('confirmationMessage').innerHTML = 'Character Name: ' + characterName + '<br>Character Class: ' + characterClass + '<br>Character Nation: ' + characterNation;
+        });
+
+        document.getElementById('confirmCharacter').addEventListener('click', function () {
+            alert('Character Created Successfully!');
+        });
+
+        document.getElementById('editCharacter').addEventListener('click', function () {
+            document.getElementById('characterCreationOptions').style.display = 'block';
+            document.getElementById('characterConfirmation').style.display = 'none';
+        });
+
+        document.getElementById('cancelCharacter').addEventListener('click', function () {
+            document.getElementById('characterCreation').style.display = 'block';
+            document.getElementById('characterConfirmation').style.display = 'none';
+        });
+
+        function characterConfirmation() {
+            var characterName = document.getElementById('charactername').value;
+            var characterClass = document.getElementById('characterClass').value;
+            var characterNation = document.getElementById('characterNation').value;
+
+            document.getElementById('characterCreationOptions').style.display = 'none';
+            document.getElementById('characterConfirmation').style.display = 'block';
+
+            document.getElementById('confirmationMessage').innerHTML = 'Character Name: ' + characterName + '<br>Character Class: ' + characterClass + '<br>Character Nation: ' + characterNation;
+        }
+
+        function name() {
+            var characterName = document.getElementById('charactername').value;
+            document.getElementById('charactername').innerHTML = characterName;
+        }
+
+        function Animation() {
+            var characterName = document.getElementById('charactername').value;
+            document.getElementById('charactername').innerHTML = characterName;
+        }
+    </script>
+</body>
+
+</html>
