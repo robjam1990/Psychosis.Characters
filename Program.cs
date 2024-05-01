@@ -87,26 +87,22 @@ public class CharacterModule
         Dictionary<string, string> characterStats = new Dictionary<string, string>
         {
             { "Inventory", "" },
-            { "Map(7*8)", "" }
-            // Add more statistics as needed
+            { "Map(7*8)", "" },
+            { "Text output", "" },
+            { "Notifications", "" },
+            { "Character Quests", "" },
+            { "List", "" },
+            { "Movement", "" },
+            { "Observation", "" },
+            { "Run", "" },
+            { "Text input", "" },
+            { "Conversation", "" }
         };
 
         foreach (KeyValuePair<string, string> stat in characterStats)
         {
             Console.WriteLine($"{stat.Key}: {stat.Value}");
         }
-    }
-
-    /// <summary>
-    /// Function to display a message with specified color.
-    /// </summary>
-    /// <param name="message">The message to display.</param>
-    /// <param name="color">The color of the message.</param>
-    public static void DisplayMessage(string message, ConsoleColor color)
-    {
-        Console.ForegroundColor = color;
-        Console.WriteLine(message);
-        Console.ResetColor();
     }
 
     public static void TUI()
@@ -135,6 +131,7 @@ ___==========================================/==\===============================
 |__==========================================\/===========================================_\======================/  |
 |                                            ||                                                                      |
 |Text input:                                 ||Notifications:                                                        |
-\__==========================================/\====================================================================__/", ConsoleColor.Green);
+\__==========================================/\====================================================================__/
+", ConsoleColor.Green);
     }
 }

@@ -101,5 +101,17 @@ namespace Psychosis
             action();
             ForegroundColor = originalColor;
         }
+
+        /// <summary>
+        /// Function to display a message with specified color.
+        /// </summary>
+        /// <param name="message">The message to display.</param>
+        /// <param name="color">The color of the message.</param>
+        public static void DisplayMessage(string message, ConsoleColor color)
+        {
+            ForegroundColor = color;
+            WriteLine(message);
+            ResetColor();
+        }
     }
 }
