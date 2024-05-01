@@ -39,9 +39,8 @@ To create a new character, you can use the `Character` class like this:
 from Psychosis.Characters import Character
 
 character = Character(
-	class_name
-	)
-	```
+	class_name)
+```
 
 	You can then access the character's properties like this:
 	```python
