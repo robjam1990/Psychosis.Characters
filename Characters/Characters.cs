@@ -1,13 +1,20 @@
 
 
+using Psychosis.Characters.Characters.Occupations;
+using System.Xml.Linq;
+using static System.Console;
+using static Psychosis.TextAnimation;
+
 namespace Psychosis
 {
     // Define the characters data
     public class Character
     {
-        public string Name { get; set; }
-        public string Occupation { get; set; }
-        public string Residence { get; set; }
+        public string Name { get; set; } = "name";
+        public string? Residence { get; set; } = null;
+        public string Occupation { get; set; } = "Vagrant";
+        public int ItemAmount { get; set; } = 0;
+        public int Silver { get; set; } = 0;
         public int Health { get; set; } = 100;
         public Dictionary<string, object> Limbs { get; set; } = new Dictionary<string, object>()
     {
@@ -40,6 +47,13 @@ namespace Psychosis
     public class Initialize
     {
         private static List<Character> charactersData = new List<Character>();
+        private object output;
+
+        public object Name { get; private set; }
+        public object Item { get; private set; }
+        public object ItemAmount { get; private set; }
+        public object Silver { get; private set; }
+        public object Age { get; private set; }
 
         // Function to initialize characters
         private static void InitializeCharacters()
@@ -145,11 +159,11 @@ new Character { Name = "Homer", Occupation = "Poet", Residence = "Unknown" }
                 string savePath = Path.Combine("Psychosis", "Data", fileName);
                 string serializedData = character.Serialize();
                 File.WriteAllText(savePath, serializedData);
-                Console.WriteLine($"{character.Name} has been exported to {savePath}.");
+                WriteLine($"{character.Name} has been exported to {savePath}.");
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Failed to export {character.Name}: {e.Message}");
+                WriteLine($"Failed to export {character.Name}: {e.Message}");
             }
         }
 
@@ -162,14 +176,80 @@ new Character { Name = "Homer", Occupation = "Poet", Residence = "Unknown" }
                 string data = File.ReadAllText(filePath);
                 Character character = new Character();
                 character.Deserialize(data);
-                Console.WriteLine($"{character.Name} has been imported from {filePath}.");
+                WriteLine($"{character.Name} has been imported from {filePath}.");
                 return character;
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Failed to import character from {fileName}: {e.Message}");
-                return null;
+                WriteLine($"Failed to import character from {fileName}: {e.Message}");
+                return null!;
             }
+        }
+
+        public void StartDialogue()
+        {
+            // Logic to start a conversation and display dialogue options
+            Say("Hello, how can I help you?", ConsoleColor.Gray, 111);
+            string response = ReadLine()!;
+            File.AppendAllText("Dialogue.txt", $"{Name} said: {response}");
+        }
+
+        public void Greet()
+        {
+            Say($"Hello, my name is {Name}.", ConsoleColor.Gray, 111);
+            string input = ReadLine()!;
+            Say($"Nice to meet you, {input}.", ConsoleColor.Gray, 111);
+            string input0 = ReadLine()!;
+            File.AppendAllText("Greetlog.txt", $"{Name} greeted {input} with {input0}.");
+        }
+
+        public void Talk()
+        {
+            Say($"{output}", ConsoleColor.Gray, 111);
+            string input = ReadLine()!;
+            File.AppendAllText("Talklog.txt", $"{Name} talked about {input}.");
+        }
+
+        public void Trade()
+        {
+            Say($"Hello, my name is {Name}. I have {ItemAmount} {Item} for sale.", ConsoleColor.Gray, 111);
+            string input = ReadLine()!;
+            Say($"That will be {Silver} silver.", ConsoleColor.Gray, 111);
+            string input0 = ReadLine()!;
+            File.AppendAllText("Tradelog.txt", $"{Name} traded {input} for {input0} silver.");
+        }
+
+        public void Farewell()
+        {
+            Say($"Goodbye, {Name}.", ConsoleColor.Gray, 111);
+            string input = ReadLine()!;
+            File.AppendAllText("Farewelllog.txt", $"{Name} said goodbye to {input}.");
+        }
+
+        public void Leave()
+        {
+            Say($"Goodbye, {Name}.", ConsoleColor.Gray, 111);
+            File.AppendAllText("Leavelog.txt", $"{Name} left.");
+        }
+
+        public void DisplayCharacter()
+        {
+            WriteLine($"Name: {Name}");
+            WriteLine($"Age: {Age}");
+        }
+
+        public void DisplayInventory()
+        {
+            WriteLine($"Name: {Name}");
+            WriteLine($"Item Amount: {ItemAmount}");
+            WriteLine($"Silver: {Silver}");
+        }
+
+        public void Work()
+        {
+            Say($"Hello, my name is {Name}. I am working right now.", ConsoleColor.Gray, 111);
+            string input = ReadLine()!;
+            File.AppendAllText("Worklog.txt", $"{Name} worked and {input}.");
         }
     }
 }

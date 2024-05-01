@@ -32,6 +32,7 @@ namespace Psychosis
  |_|      |___/  \__, |  \___| |_| |_|  \___/  |___/ |_| |___/
                   __/ |                                       
                  |___/                                         ");
+            WaitForKey();
         }
 
         public static void PlayDeadAnimation()
@@ -48,6 +49,7 @@ namespace Psychosis
             }
 
             Thread.Sleep(500); // Extra pause on the final frame
+            WaitForKey();
             ResetConsoleColor();
         }
 
