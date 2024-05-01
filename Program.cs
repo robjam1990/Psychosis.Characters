@@ -90,7 +90,7 @@ public class CharacterModule
         Dictionary<string, string> characterStats = new Dictionary<string, string>
         {
             { "Inventory", "" },
-            { "Map(7*8)", "" },
+            { "Map(5*5)", "" },
             { "Text output", "" },
             { "Notifications", "" },
             { "Character Quests", "" },
@@ -110,39 +110,54 @@ public class CharacterModule
 
     public static void TUI()
     {
-        DisplayMessage(@"
+        DisplayMessage(@$"
 ___==========================================/==\==================================================================___
 | /                                           /\                                                                   \ |
 |/                                            ||                                                                    \|
 ||                                            ||                                                                    ||
 ||                                            ||/                                                                   ||
-||                                            |__================__/                                                ||
-||                                            ||Character Statistics/                                               ||
-||                                            |__\===================/===========================^=================__|
+||                                            |__================                                                   ||
+||                                            ||{Statistics}:                                                       ||
+||                                            |__\===============================================^=================__|
 ||                                            |\                                                 |                 \ |
 ||                                            ||                                                 |                  \|
 ||                                            ||                                                 |                  ||
-||Inventory:                                  ||Map(7*8):                                        |                  ||
-|/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|                  ||
+||{Inventory}:                                ||{Map(5*5)}:                                      |                  ||
+|/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|                                       |                  ||
 |__============================================================================================__|                  ||
-||_____________________________|_____________\__________________________________________________/|                  ||
-||(C)onversation:              |__========__\                                                  / |                  ||
-||                             |Text output:|                                                 / \|                  ||
-||                             __=========__|_____________________________________________|__/_|/|List:             ||
-||                                           ||                                           |_/|\__|__=============___/|
-||(M)ovement        (O)bservation      (R)un ||                                           |/_  Character Quests:  _/ |
-|__==========================================\/===========================================_\======================/  |
+||_____________________________|________________________________________________________________/|                  ||
+||{Conversation}:              |==========|                                                    / |                  ||
+||                             |{Output}:                                                     / \|                  ||
+||                             |==========___________________________________________________/_|/|{QuestList}:      ||
+||                                           ||                                           |_/|\__|__=============    |
+||{Movement}        {Observation}      {Run} ||                                           |/_{Quest}:             _/|
+|__==========================================\/===========================================_\======================/|\|
 |                                            ||                                                                      |
-|Text input:                                 ||Notifications:                                                        |
+|{Input}:                                    ||{Notifications}:                                                      |
 \__==========================================/\====================================================================__/
 ", ConsoleColor.Green);
     }
 
-
+    private static object Map(int area)
+    {
+        return area;
+    }
 
     public GameConfigDefaults Defaults { get; set; }
     public BootstrapConfig BootstrapConfig { get; set; }
     public bool WindowTitle { get; private set; }
+    public static object Statistics { get; private set; }
+    public static object Inventory { get; private set; }
+    public static object Conversation { get; private set; }
+    public static object Quests { get; private set; }
+    public static object QuestList { get; private set; }
+    public static object Quest { get; private set; }
+    public static object Notifications { get; private set; }
+    public static object Input { get; private set; }
+    public static object Output { get; private set; }
+    public static object Movement { get; private set; }
+    public static object Observation { get; private set; }
+    public static object Run { get; private set; }
 
     private GameConfigDefaults gameConfig;
 
