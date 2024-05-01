@@ -6,7 +6,7 @@ using static Psychosis.TextAnimation;
 
 public class CharacterModule
 {
-    public static string Username { get; private set; }
+    public static string Username { get; private set; } = "Guest";
 
     public static void Main(string[] args)
     {
@@ -143,27 +143,27 @@ ___==========================================/==\===============================
         return area;
     }
 
-    public GameConfigDefaults Defaults { get; set; }
-    public BootstrapConfig BootstrapConfig { get; set; }
+    public GameConfigDefaults Defaults { get; set; } = new GameConfigDefaults();
+    public BootstrapConfig BootstrapConfig { get; set; } = new BootstrapConfig();
     public bool WindowTitle { get; private set; }
-    public static object Statistics { get; private set; }
-    public static object Inventory { get; private set; }
-    public static object Conversation { get; private set; }
-    public static object Quests { get; private set; }
-    public static object QuestList { get; private set; }
-    public static object Quest { get; private set; }
-    public static object Notifications { get; private set; }
-    public static object Input { get; private set; }
-    public static object Output { get; private set; }
-    public static object Movement { get; private set; }
-    public static object Observation { get; private set; }
-    public static object Run { get; private set; }
+    public static object Statistics { get; private set; } = new object();
+    public static object Inventory { get; private set; } = new object();
+    public static object Conversation { get; private set; } = new object();
+    public static object Quests { get; private set; } = new object();
+    public static object QuestList { get; private set; } = new object();
+    public static object Quest { get; private set; } = new object();
+    public static object Notifications { get; private set; } = new object();
+    public static object Input { get; private set; } = new object();
+    public static object Output { get; private set; } = new object();
+    public static object Movement { get; private set; } = new object();
+    public static object Observation { get; private set; } = new object();
+    public static object Run { get; private set; } = new object();
 
-    private GameConfigDefaults gameConfig;
+    private GameConfigDefaults? gameConfig; 
 
     public GameConfigDefaults GetGameConfig()
     {
-        return gameConfig;
+        return gameConfig!;
     }
 
     private void SetGameConfig(GameConfigDefaults value)
