@@ -1,304 +1,304 @@
     [
         "Quests",
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ark",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Speak to Ajax, the Leader of the Hammerhead Mercenaries.",
-            "injective": "Faction"
+            "re": "Game Trigger",
+            "sub": "Ark",
+            "con": "Taverne(Main Hall)",
+            "ob": "Speak to Ajax, the Leader of the Hammerhead Mercenaries.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Aslo",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Help ASLO the Bard remember the lyrics he forgot!",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Aslo",
+            "con": "Taverne(Main Hall)",
+            "ob": "Help ASLO the Bard remember the lyrics he forgot!",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Maia",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Speak with the Barkeep, The head of the establishment 'Ye Olde Taverne'.",
-            "type": "Main"
+            "re": "Game Trigger",
+            "sub": "Maia",
+            "con": "Taverne(Main Hall)",
+            "ob": "Speak with the Barkeep, The head of the establishment 'Ye Olde Taverne'.",
+            "in": "Main"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Aithaluwa",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Craft any chestpiece for a fellow adventurer.",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Aithaluwa",
+            "con": "Taverne(Main Hall)",
+            "ob": "Craft any chestpiece for a fellow adventurer.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ralph",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Harvest Ginger Root.",
-            "type": "Ye Olde Taverne"
+            "re": "Game Trigger",
+            "sub": "Ralph",
+            "con": "Taverne(Main Hall)",
+            "ob": "Harvest Ginger Root.",
+            "in": "Ye Olde Taverne"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ajax",
-            "conjective": "Mercenary Camp(Leader's Tent)",
-            "objective": "Deliver 5 weapons of good quality or better.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "Ajax",
+            "con": "Mercenary Camp(Leader's Tent)",
+            "ob": "Deliver 5 weapons of good quality or better.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Opus",
-            "conjective": "Temple(Sacred Chamber)",
-            "objective": "Speak with the Apus, The Queen of Bractalia.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "Opus",
+            "con": "Temple(Sacred Chamber)",
+            "ob": "Speak with the Apus, The Queen of Bractalia.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Apus",
-            "conjective": "Bractal Castle(Throne Room)",
-            "objective": "Kill the leader of the Bandit Camp.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "Apus",
+            "con": "Bractal Castle(Throne Room)",
+            "ob": "Kill the leader of the Bandit Camp.",
+            "in": "Nation"
         },
         {
             "Bling": "Deliver Blings Things.",
-            "conjective": "Weavery(Shop)",
-            "objective": "Deliver some supplies to John in the Ruins to the South.",
-            "type": "Side"
+            "con": "Weavery(Shop)",
+            "ob": "Deliver some supplies to John in the Ruins to the South.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Sap of Life",
-            "conjective": "Temple(Main Chamber)",
-            "objective": "Gather 5 drops of the Sap of Life for the town's Healer.",
-            "type": "Nexus"
+            "re": "Game Trigger",
+            "sub": "The Sap of Life",
+            "con": "Temple(Main Chamber)",
+            "ob": "Gather 5 drops of the Sap of Life for the town's Healer.",
+            "in": "Nexus"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Lost And Found",
-            "conjective": "Marketplace(Evening)",
-            "objective": "Help a child find their lost necklace.",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Lost And Found",
+            "con": "Marketplace(Evening)",
+            "ob": "Help a child find their lost necklace.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Cave Rumours",
-            "conjective": "Mount Robson(Peak, Mineshaft)",
-            "objective": "Explore the mysterious cave and discover new resources.",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Cave Rumours",
+            "con": "Mount Robson(Peak, Mineshaft)",
+            "ob": "Explore the mysterious cave and discover new resources.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Trading Goods Caravan",
-            "conjective": "Marketplace(3 Times a Week)",
-            "objective": "Trade goods with two merchants from different towns.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "Trading Goods Caravan",
+            "con": "Marketplace(3 Times a Week)",
+            "ob": "Trade goods with two merchants from different towns.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Dragon Rumours",
-            "conjective": "Mountain Peak(Eagle's Nest)",
-            "objective": "Investigate the rumours of a dragon in the area.",
-            "type": "Trophy Hunting"
+            "re": "Game Trigger",
+            "sub": "Dragon Rumours",
+            "con": "Mountain Peak(Eagle's Nest)",
+            "ob": "Investigate the rumours of a dragon in the area.",
+            "in": "Trophy Hunting"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ancient Relics",
-            "conjective": "Ruins (Demolished Blacksmith's Shop)",
-            "objective": "Retrieve the specified artifacts and return them to the Scavenger.",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Ancient Relics",
+            "con": "Ruins (Demolished Blacksmith's Shop)",
+            "ob": "Retrieve the specified artifacts and return them to the Scavenger.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Famine Relief",
-            "conjective": "Famine-affected Village",
-            "objective": "Deliver a large quantity of food to the village to help alleviate the famine.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "Famine Relief",
+            "con": "Famine-affected Village",
+            "ob": "Deliver a large quantity of food to the village to help alleviate the famine.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ghostly Haunting",
-            "conjective": "Ruins (Damaged Shop)",
-            "objective": "Gather evidence, solve puzzles, and confront the source of the haunting.",
-            "type": "Side"
+            "re": "Game Trigger",
+            "sub": "Ghostly Haunting",
+            "con": "Ruins (Damaged Shop)",
+            "ob": "Gather evidence, solve puzzles, and confront the source of the haunting.",
+            "in": "Side"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Military Intelligence",
-            "conjective": "Enemy Stronghold (Various Areas)",
-            "objective": "Gather information on enemy movements, resources, and plans without being detected.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "Military Intelligence",
+            "con": "Enemy Stronghold (Various Areas)",
+            "ob": "Gather information on enemy movements, resources, and plans without being detected.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "National Combat Toursubjectivent",
-            "conjective": "Bractal Castle (Inner Courtyard)",
-            "objective": "Participate in a combat toursubjectivent to represent your nation and win glory for your faction.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "National Combat Toursubnt",
+            "con": "Bractal Castle (Inner Courtyard)",
+            "ob": "Participate in a combat toursubnt to represent your nation and win glory for your faction.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Lost Expedition",
-            "conjective": "Uncharted Wilderness",
-            "objective": "Follow the expedition's trail, overcome obstacles, and rescue any survivors.",
-            "type": "Bractal"
+            "re": "Game Trigger",
+            "sub": "Lost Expedition",
+            "con": "Uncharted Wilderness",
+            "ob": "Follow the expedition's trail, overcome obstacles, and rescue any survivors.",
+            "in": "Bractal"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Political Slander",
-            "conjective": "Royal Court (Various Courtrooms and Chambers)",
-            "objective": "Slander a political rival out of office and replace them with a more favorable candidate.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "Political Slander",
+            "con": "Royal Court (Various Courtrooms and Chambers)",
+            "ob": "Slander a political rival out of office and replace them with a more favorable candidate.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Royal Heirloom",
-            "conjective": "Bractal Castle (Treasury)",
-            "objective": "Steal the royal heirloom and return it to the rightful owner.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "Royal Heirloom",
+            "con": "Bractal Castle (Treasury)",
+            "ob": "Steal the royal heirloom and return it to the rightful owner.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Secret Society",
-            "conjective": "Nexus (Underground Tunnels)",
-            "objective": "Infiltrate the secret society, gather evidence, and expose their activities to the public.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "Secret Society",
+            "con": "Nexus (Underground Tunnels)",
+            "ob": "Infiltrate the secret society, gather evidence, and expose their activities to the public.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Great Hunt",
-            "conjective": "Nexus (Day Time)",
-            "objective": "Hunt down a legendary beast and claim its head as a trophy.",
-            "type": "Trophy Hunting"
+            "re": "Game Trigger",
+            "sub": "The Great Hunt",
+            "con": "Nexus (Day Time)",
+            "ob": "Hunt down a legendary beast and claim its head as a trophy.",
+            "in": "Trophy Hunting"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Lost Crown",
-            "conjective": "Ruins (Collapsed Throne Room)",
-            "objective": "Find the lost crown and return it to the rightful ruler.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "The Lost Crown",
+            "con": "Ruins (Collapsed Throne Room)",
+            "ob": "Find the lost crown and return it to the rightful ruler.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Missing Heir",
-            "conjective": "Bractal Castle (Royal Chambers)",
-            "objective": "Find the missing heir and return them to the throne.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "The Missing Heir",
+            "con": "Bractal Castle (Royal Chambers)",
+            "ob": "Find the missing heir and return them to the throne.",
+            "in": "Nation"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Shadow War",
-            "conjective": "Enemy Stronghold (Various Areas)",
-            "objective": "Sabotage enemy operations, assassinate key targets, and gather intelligence to win the shadow war.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "The Shadow War",
+            "con": "Enemy Stronghold (Various Areas)",
+            "ob": "Sabotage enemy operations, assassinate key targets, and gather intelligence to win the shadow war.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Unholy Alliance",
-            "conjective": "Nexus (Underground Tunnels)",
-            "objective": "Form an alliance with a dark power to achieve your goals, but beware the consequences.",
-            "type": "Faction"
+            "re": "Game Trigger",
+            "sub": "The Unholy Alliance",
+            "con": "Nexus (Underground Tunnels)",
+            "ob": "Form an alliance with a dark power to achieve your goals, but beware the consequences.",
+            "in": "Faction"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "The Unseen Hand",
-            "conjective": "Royal Court (Various Courtrooms and Chambers)",
-            "objective": "Manipulate events behind the scenes to control the outcome of political decisions.",
-            "type": "Nation"
+            "re": "Game Trigger",
+            "sub": "The Unseen Hand",
+            "con": "Royal Court (Various Courtrooms and Chambers)",
+            "ob": "Manipulate events behind the scenes to control the outcome of political decisions.",
+            "in": "Nation"
         },
         "Dynamic Events",
         {
-            "rejective": "Game Trigger",
-            "subjective": "BanditRaid",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Defend the tavern from a bandit raid!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "BanditRaid",
+            "con": "Taverne(Main Hall)",
+            "ob": "Defend the tavern from a bandit raid!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "EscortMission",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Escort a merchant safely to a specified area.",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "EscortMission",
+            "con": "Taverne(Main Hall)",
+            "ob": "Escort a merchant safely to a specified area.",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "HuntingContest",
-            "conjective": "Taverne(Main Hall)",
-            "objective": "Participate in the hunting contest.",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "HuntingContest",
+            "con": "Taverne(Main Hall)",
+            "ob": "Participate in the hunting contest.",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "CombatToursubjectivents",
-            "conjective": "Longhouse(Archery Range, Arena and Training Grounds)",
-            "objective": "Participate in a combat tourney.",
-            "type": "Dynamic Events"
+            "re": "Game Trigger",
+            "sub": "CombatToursubnts",
+            "con": "Longhouse(Archery Range, Arena and Training Grounds)",
+            "ob": "Participate in a combat tourney.",
+            "in": "Dynamic Events"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "AnimalAttack",
-            "conjective": "Nexus(Night Time)",
-            "objective": "You are attacked by a wild animal! Defend yourself!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "AnimalAttack",
+            "con": "Nexus(Night Time)",
+            "ob": "You are attacked by a wild animal! Defend yourself!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "FrameJob",
-            "conjective": "Marketplace(Rush Hour)",
-            "objective": "You are framed for a crime you didn't commit! The guards are after you!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "FrameJob",
+            "con": "Marketplace(Rush Hour)",
+            "ob": "You are framed for a crime you didn't commit! The guards are after you!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Assassination",
-            "conjective": "Enemy Stronghold(Various Areas)",
-            "objective": "Assassinate a high-ranking enemy officer.",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "Assassination",
+            "con": "Enemy Stronghold(Various Areas)",
+            "ob": "Assassinate a high-ranking enemy officer.",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Siege",
-            "conjective": "Bractal Castle(Inner Courtyard)",
-            "objective": "Defend the castle from a siege!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "Siege",
+            "con": "Bractal Castle(Inner Courtyard)",
+            "ob": "Defend the castle from a siege!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "DungeonCrawl",
-            "conjective": "Ruins (Various Areas)",
-            "objective": "Explore the ruins and find the treasure!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "DungeonCrawl",
+            "con": "Ruins (Various Areas)",
+            "ob": "Explore the ruins and find the treasure!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "RescueMission",
-            "conjective": "Uncharted Wilderness",
-            "objective": "Rescue a group of hostages from a bandit camp.",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "RescueMission",
+            "con": "Uncharted Wilderness",
+            "ob": "Rescue a group of hostages from a bandit camp.",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Raid",
-            "conjective": "Enemy Stronghold(Various Areas)",
-            "objective": "Raid the enemy stronghold and steal their supplies!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "Raid",
+            "con": "Enemy Stronghold(Various Areas)",
+            "ob": "Raid the enemy stronghold and steal their supplies!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "HuntingParty",
-            "conjective": "Nexus(Day Time)",
-            "objective": "Hunt a dangerous beast with a group of other adventurers.",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "HuntingParty",
+            "con": "Nexus(Day Time)",
+            "ob": "Hunt a dangerous beast with a group of other adventurers.",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "Ambush",
-            "conjective": "Enemy Stronghold(Various Areas)",
-            "objective": "Ambush an enemy patrol and steal their supplies!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "Ambush",
+            "con": "Enemy Stronghold(Various Areas)",
+            "ob": "Ambush an enemy patrol and steal their supplies!",
+            "in": "Dynamic Event"
         },
         {
-            "rejective": "Game Trigger",
-            "subjective": "BountyHunt",
-            "conjective": "Nexus(Day Time)",
-            "objective": "Hunt down a dangerous criminal and bring them to justice!",
-            "type": "Dynamic Event"
+            "re": "Game Trigger",
+            "sub": "BountyHunt",
+            "con": "Nexus(Day Time)",
+            "ob": "Hunt down a dangerous criminal and bring them to justice!",
+            "in": "Dynamic Event"
         }
     ]
