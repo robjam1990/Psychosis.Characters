@@ -1,3 +1,21 @@
+            {
+                Description = description // Set the character's description
+            }; // Create a new character with default color
+            Alek.Draw(); // Draw the character
+            WriteLine("\nCharacter created."); // Write a message
+            TextAnimation.WaitForKey(); // Wait for a key press
+        }
+
+        public void AdjustOxygen()
+        {
+            while (UnderWater)
+            {
+                Oxygen--;
+                WriteLine($"{Species} {Name} oxygen level adjusted to {Oxygen}.");
+            }
+        }
+    }
+}
 using System;
 using System.Collections.Generic;
 
